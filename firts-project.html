@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stand With Ukraine</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(#0074cc, yellow);
+    }
+    h1 {
+      color: white;
+      text-align: center;
+      padding: 10px 0 0 10px;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      border: 1px solid #0074cc;
+      padding: 16px;
+      font-size: 1.7em;
+      border-radius: 4px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+      max-width: 100%;
+    }
+    button {
+      display: block;
+      margin: auto;
+      border-radius: 30px;
+      color: white;
+      font-size: 20px;
+      padding: 16px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      background: #0074cc;
+      border: none;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      opacity: 0.4;
+      cursor: pointer;
+    }
+    .text-about-Ukrainians {
+      line-height: 1.5em;
+      text-align: center;
+      margin-top: 32px;
+    }
+    .author {
+      display: block;
+      text-align: center;
+      color: rgba(39, 34, 34, 0.637);
+      padding: 30px;
+    }
+    .linkedin {
+      text-decoration: none;
+    }
+    .linkedin:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .standWithUkraine-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px;
+    }
+    .center-container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px 0 0 10px;
+    }
+  </style>
+  <body>
+    <div class="standWithUkraine-container">
+      <h1>Stand with Ukraine</h1>
+      <h2>Please, support brave Ukrainians</h2>
+      <div class="center-container">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/496/original/crise-ukraine-3.jpg?1653682772"
+          alt="Ukrainian flag"
+          width="400"
+        />
+        <p class="text-about-Ukrainians">
+          Ukrainians constantly fight against any manifestations of tyrany and
+          defend freedom. They have the courage to fight against all Russian
+          forces on land, in the air and at sea. They have courage to go unarmed
+          against Russian armored vehicles. Ukrainians convince and restore
+          honesty in the world. <br />If everyone in the world had at least ten
+          percents of the courage that Ukrainians have, there would be no danger
+          to international law at all. There would be no danger to the freedom
+          of the nation. <br />
+          Be brave like Ukraine!
+        </p>
+      </div>
+      <button>Click to support</button>
+      <p class="author">
+        Made by
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/marina-tupchii-750b12217/"
+          target="_blanck"
+        />
+        Marina Tupchii
+      </p>
+    </div>
+    <script>
+      function supportUkraine() {
+        let name = prompt("What is your name?");
+        let country = prompt("Where are you from, " + name + "?");
+        alert("Thank you, " + name + ". Your support is appriciated!");
+      }
+      let supportButton = document.querySelector("button");
+      supportButton.addEventListener("click", supportUkraine);
+    </script>
+  </body>
+</html>
